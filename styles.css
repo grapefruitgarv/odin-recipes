@@ -1,0 +1,108 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.main {
+    font-size: 70px;
+}
+
+img {
+    height: 350px;
+    width: auto;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border: .5px;
+    border-radius: 15px;
+    border-style:solid;
+}
+
+body {
+    background-color: peachpuff;
+}
+
+.boxed-links {
+    /* display: inline-block; */
+    margin: 0 auto;
+    width: 50%;
+}
+
+.boxed-links a:link {
+    color: blueviolet;
+}
+
+.boxed-links a:visited {
+    color: darkred;
+}
+
+.boxed-links a:hover, a:hover {
+    color: coral;
+}
+
+.description {
+    color: rgb(255, 158, 47);
+    background-color: dimgray;
+    width: 700px;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.links li {
+    font: menu;
+    margin-top: .5em;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.bottom {
+    text-align: center;
+    font: menu;
+    padding: 10px;
+}
+
+.ingredients {
+    color: darkblue;
+    font-family: Impact, monospace, sans-serif;
+    font-size: 20px;
+}
+
+.ingredients ul {
+    list-style-type: circle;
+    background: rgba(255, 20, 145, 0.4);
+    width: 700px;
+    line-height: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ingredients h3 {
+    font-size: 30px;
+}
+
+.steps {
+    font-family: Verdana, Helvetica, serif;
+    width: 700px;
+    font-size: 20px;
+}
+
+.steps li {
+    color: darkolivegreen;
+    margin-top: 1.5em;
+}
+
+/* Specifically style the numbers and look for the ordered list. 
+Instead of having 1. It's been altered to 1) and bold. To have a character
+before the number, simply include it in the content section with "" before
+the counter item */
+.steps ol > li::marker {
+    font-weight: bold;
+    content: counter(list-item)") ";
+}
+
+.steps h3 {
+    padding: 2px 5px;
+    padding-bottom: 5px;
+    width: fit-content;
+    background-color: bisque;
+    border-style:groove;
+}
